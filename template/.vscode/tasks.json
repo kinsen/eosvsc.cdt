@@ -1,0 +1,14 @@
+{
+    "version": "2.0.0",
+    "reveal": "always",
+    "options": {
+        "cwd": "${workspaceRoot}"
+    },
+    "tasks": [
+        {
+            "label": "Build",
+            "type": "shell",
+            "command": "sh ${workspaceRoot}/.vscode/scripts/build.sh"
+        }
+    ]
+}
