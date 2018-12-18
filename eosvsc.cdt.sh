@@ -23,6 +23,8 @@ function setup(){
     echo -e "${GREEN}create project folder ${YELLOW} ${projectName} ${NC}"
     mkdir -p ${projectName} && cd ${projectName}
     cp -r ${template}/* $PWD/
+    cp -r ${template}/.vscode $PWD/
+    cp -r ${template}/.gitignore $PWD/
     find ./src -name "CMakeLists.txt" | xargs sed -i '' -e "s/projectName/${projectName}/g"
 }
 
